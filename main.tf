@@ -12,18 +12,18 @@ resource "aws_instance" "terraform-instance" {
     }
 }
 
-resource "aws_s3_bucket" "s3_bucket" {
-    bucket = "statefile-s3-lock21314"
-  
+
+resource "aws_s3_bucket" "devansh" {
+  bucket = "devansh1231" 
 }
 
 resource "aws_dynamodb_table" "terraform_lock" {
-    name = "terraform-lock"
-    billing_mode = "PAY_PER_REQEST"
-    hash_key = "LockID"
+  name           = "terraform-lock"
+  billing_mode   = "PAY_PER_REQUEST"
+  hash_key       = "LockID"
 
-    attribute {
-        name = "LockID"
-        type = "S"
-    }
-}    
+  attribute {
+    name = "LockID"
+    type = "S"
+  }
+}  
