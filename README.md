@@ -9,3 +9,6 @@ Terraform is a open source infrastructure as a Code(IAC), developed by HashiCorp
 * **Execution Plans**:Generates and shows execution plans before deploying
 * **Resource Graph**:Builds a graph of all resources and their dependencies
 * **Change Automation**:Automates complex changes
+
+### What is statefile? Why it is important
+State file is like a snapshot of your entire infrastructure's.It keeps track of resource metadata,dependencies and other details required for terraform.
